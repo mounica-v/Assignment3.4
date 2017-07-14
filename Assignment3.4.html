@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head><title>Assignment3.4</title>
+        <style>
+            body{background-image:url("./img/brown.jpg");}
+            form{margin:20px;padding:30px;}
+            input:enabled{background-color: plum;}
+            div{opacity: 0.5;}
+        </style>
+    </head>
+    <body>
+        <h1>Student Signup Form</h1>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend><h3>Personal Information</h3></legend>
+        First Name:<br>
+                <input type="text" name="first name" > <br>
+        Last name:<br>
+               <input type="text" name="last name"> <br> 
+        Gender:<br>
+        <select name="gender">
+            <option value="female"> female</option>
+            <option value="male">male</option>
+        </select> <br>
+        Daate Of Birth:<br>
+                <input type="date" name="DOB" value="dd/mm/yyyy" min="06-08-2012" max="06-08-2015"> <br>
+        Mother's Education Qualification:<br>
+                <input type="text" name="Qualification" disabled> <br>
+        Father's Education Qualification:<br>
+                <input type="text" name="Qualification" > <br>
+        Email-address:<br>
+                <input type="text" name="email eddress"><br>
+        Password: <br>
+                <input type="text" name="password" minlength="6"> <br>
+        Confirm password:<br>
+                <input type="text" name="confirm password"><br>
+        Phone number:<br>
+                <input type="text"name="phone number" maxlength="10">
+            </fieldset>
+            <fieldset><legend><h3>Address Details</h3></legend>
+                Address line one:
+                <input type="text" name="address1" > <br>
+                Address line two:
+                <input type="text" name="address2"> <br>
+                Town/City:
+                <input type="text" name="town/city"> <br>
+                Zip /Post Code:
+                <input type="text" name="pincode"> <br>
+            </fieldset>
+            <div>
+            <input type="submit" value="sibmit">
+            </div>
+        </form>
+        
+    </body>
+</html>
